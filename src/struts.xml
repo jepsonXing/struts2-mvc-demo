@@ -1,0 +1,22 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <package name="selab2" extends="struts-default">
+    	<action name="" class="selab2.action.Listall">
+    		<result name="success">/showall.jsp</result>
+    	</action>
+    	
+    	<action name="info" class="selab2.action.Info">
+            <result name="success">/info.jsp</result>
+        </action>
+        
+        <action name="getworks" class="selab2.action.Getworks">
+            <result name="success">/getworks.jsp</result>
+        </action>
+        
+        <action name="delete" class="selab2.action.Delete">
+            <result type="redirect">/</result>
+        </action>
+    </package>
+</struts>
